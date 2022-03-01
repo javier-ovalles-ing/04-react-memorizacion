@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import Contador from "./Components/Contador";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
+      return (
+      <div>
+        <h1>Memorizacion en React</h1>
+        <hr/>
+        <h2>Teoria</h2>
+        <h3>
+          <a href="https://es.reactjs.org/docs/react-api.html#reactmemo"
           target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+          rel="noreferrer"
+          >
+            memo
+          </a> 
+        </h3>
+        <hr/>
+        
+        <Contador/>
+      </div>
+      )
 }
 
 export default App;
